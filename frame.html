@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobooth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="frame">
+  <div class="frame-selector">
+    <h1>Pick your frame</h1>
+  </div>
+  <div class="frames-grid">
+    <div class="frame-option" data-photos="3" data-frame="frame1">
+      <img src="frames/1.png" alt="3-photo frame">
+    </div>
+    <div class="frame-option" data-photos="3" data-frame="frame2">
+      <img src="frames/2.png" alt="3-photo frame">
+    </div>
+    <div class="frame-option" data-photos="3" data-frame="frame3">
+      <img src="frames/3.png" alt="3-photo frame">
+    </div>
+    <div class="frame-option" data-photos="3" data-frame="frame4">
+      <img src="frames/4.png" alt="3-photo frame">
+    </div>
+    <div class="frame-option" data-photos="4" data-frame="frame5">
+      <img src="frames/s1.png" alt="4-photo frame">
+    </div>
+    <div class="frame-option" data-photos="4" data-frame="frame6">
+      <img src="frames/s2.png" alt="4-photo frame">
+    </div>
+    <div class="frame-option" data-photos="4" data-frame="frame7">
+      <img src="frames/s3.png" alt="4-photo frame">
+    </div>
+    <div class="frame-option" data-photos="4" data-frame="frame8">
+      <img src="frames/s4.png" alt="4-photo frame">
+    </div>
+  </div>
+
+  <!-- Firebase SDK (needed for saveName but safe to include here too) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <!-- Your script -->
+  <script src="script.js"></script>
+</body>
+</html>

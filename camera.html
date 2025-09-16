@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="camera">
+  <!-- Popup Modal -->
+  <div class="popup" id="startPopup">
+    <div class="popup-content">
+      <h2>Ready to Start?</h2>
+      <p>We’ll take your photos one by one with a countdown.</p>
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="cancelBtn">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Camera Section -->
+  <div class="camera-box hidden" id="cameraBox">
+    <h1 id="countdown"></h1>
+    <video id="camera-stream" autoplay></video>
+    <canvas id="photo-canvas" width="400" height="300" style="display:none;"></canvas>
+    <div class="photos"></div>
+  </div>
+
+  <!-- Success Popup -->
+  <div id="successPopup" class="popup hidden">
+    <div class="popup-content">
+      <h2>✅ All photos captured!</h2>
+      <button id="previewBtn">See Preview</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
